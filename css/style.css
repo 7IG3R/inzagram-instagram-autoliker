@@ -1,0 +1,422 @@
+/*------ CSS RESET ------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*------ MAIN CSS ------ (c) 2013 Shakti Saurav | TricksKreators  */
+
+
+/*------ GENERAL ------*/
+
+@font-face {
+    font-family: Source Sans Pro;
+}
+
+body {
+    background: url('img/bg.png') repeat;
+    font-family: 'Source Sans Pro', Helvetica Neue, sans-serif;
+    text-shadow: 0px 1px 0px #ffffff;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 13px;
+    font-family: 'Source Sans Pro', Helvetica Neue, sans-serif;
+    color: #5c5c5c;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+p {
+    font-size: 12px;
+    font-family: 'Source Sans Pro', Helvetica Neue, sans-serif;
+    font-weight: 100;
+    color: #838383;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    line-height: 20px;
+}
+
+a {
+    font-family: 'Source Sans Pro', Helvetica Neue, sans-serif;
+    font-weight: 100;
+    color: #5c5c5c;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    -o-transition: color .2s ease-out, background 2s ease-in;
+    -ms-transition: color .2s ease-out, background 2s ease-in;
+    -moz-transition: color .2s ease-out, background 2s ease-in;
+    -webkit-transition: color .2s ease-out, background 2s ease-in;
+    transition: color .2s ease-out, background 2s ease-in;
+}
+
+a:hover {
+    color: #838383;
+}
+
+#main {
+    width: 481px;
+    height: 308px;
+    background: url(img/main.png) no-repeat 0 0;
+    top: 50%;
+    left: 50%;
+    margin: -154px 0 0 -240px;
+    position: absolute;
+}
+
+
+/*------ HEADER ------*/
+
+#header {
+    height: 109px;
+}
+
+#logo {
+    float: left;
+    display: inline;
+    height: 65px;
+    width: 65px;
+    margin: 24px 0 0 24px;
+}
+
+#logo img {
+    border: solid #a4aaad 1px;
+}
+
+#namedesc {
+    float: left;
+    margin: 39px 0 0 20px;
+}
+
+#namedesc h1 {
+    margin-bottom: 8px;
+    text-shadow: 0px 1px 0px #ffffff;
+    font-family: 'Source Sans Pro-Bold', Helvetica Neue, sans-serif;
+}
+
+#download {
+    float: right;
+    display: inline;
+    margin: 40px 40px 0 0;
+}
+
+#download .button {
+    font-family: 'Source Sans Pro-Bold', Helvetica Neue, sans-serif;
+    color: #5c5c5c;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-box-shadow: 0px 1px 0px #fff;
+    -moz-box-shadow: 0px 1px 0px #fff;
+    -webkit-box-shadow: inset 0px 1px 0px #fff;
+    -moz-box-shadow: inset 0px 1px 0px #fff;
+    text-shadow: 0px 1px 0px #ffffff;
+    border: solid #a4aaad 1px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f8f9), to(#d6dee4));
+    background: -moz-linear-gradient(top, #f6f8f9, #d6dee4);
+    -ms-filter: progid: DXImageTransform.Microsoft.gradient(startColorStr=#f6f8f9, endColorStr=#d6dee4);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorStr=#f6f8f9, endColorStr=#d6dee4);
+    display: inline-block;
+}
+
+#download .button:hover {
+    background: #e4ebef;
+    -webkit-box-shadow: inset 0px 1px 0px #f0f0f0;
+    -moz-box-shadow: inset 0px 1px 0px #f0f0f0;
+}
+
+#content {
+    height: 147px;
+    margin: 20px;
+}
+
+#content h1 {
+    margin-bottom: 10px;
+}
+
+.textbox {
+    width: 275px;
+    border: solid 1px #ccc;
+    height: 26px;
+    background: #5E768D;
+    background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #546A7F), color-stop(20%, #5E768D));
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0px 1px 0px #f2f2f2;
+    -webkit-box-shadow: 0px 1px 0px #F2F2F2;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-shadow: 0px -1px 0px #334F71;
+}
+
+.textbox:focus {
+    background: #728EAA;
+    background: -moz-linear-gradient(top, #668099 0%, #728EAA 20%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #668099), color-stop(20%, #728EAA));
+    outline: 0;
+}
+
+#content img.workimg {
+    width: 97px;
+    height: 86px;
+    display: inline;
+    float: left;
+    margin: 3px 15px 0 0;
+    border: solid #fff 1px;
+    -webkit-box-shadow: 0px 1px 3px #a4aaad;
+    -moz-box-shadow: 0px 1px 3px #a4aaad;
+}
+
+#content img.workimg:hover {
+    opacity: 0.8;
+}
+
+#content img#last {
+    margin-right: 0;
+}
+
+#content img.socialicons {
+    width: 37px;
+    height: 37px;
+    margin: 0 15px 15px 0;
+}
+
+
+/*------ FOOTER ------*/
+
+#footer {
+    height: 45px;
+    clear: both;
+}
+
+#currentlyavailable {
+    margin: -26px 0 0 15px;
+}
+
+#currentlyavailable p {
+    margin: -23px 0 0 28px;
+    color: #838383;
+}
+
+#footerlinks {
+    float: right;
+    margin: -20px 19px 0 0;
+}
+
+#footerlinks a {
+    color: #838383;
+}
+
+#footerlinks a:hover {
+    color: #5c5c5c;
+}
+
+#footerlinks a.current {
+    color: #5c5c5c;
+}
+
+#contentleft {
+    height: 147px;
+    width: 200px;
+    margin: 20px 20px -6px 20px;
+    float: left;
+}
+
+#contentleft h1 {
+    margin-bottom: 10px;
+}
+
+#contactright {
+    height: 147px;
+    float: right;
+}
+
+#contentright h1 {
+    margin: 20px 0 10px 0;
+}
+
+.workimg {
+    width: 97px;
+    height: 86px;
+    display: inline;
+    float: left;
+    margin: 3px 15px 0 0;
+    border: solid #fff 1px;
+    -webkit-box-shadow: 0px 1px 3px #a4aaad;
+    -moz-box-shadow: 0px 1px 3px #a4aaad;
+}
+
+.workimg:hover {
+    opacity: 0.8;
+}
+
+img#last {
+    margin-right: 0;
+}
+
+img.socialicons {
+    width: 37px;
+    height: 37px;
+    margin: 0 15px 15px 0;
+}
+
+.slides_container {
+    width: 441px;
+    height: 99px;
+    display: none;
+}
+
+.slides_container div {
+    width: 441px;
+    height: 99px;
+    display: block;
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination .current a {
+    color: red;
+}
+
+#slidenav {
+    float: right;
+    margin-top: -25px;
+}
